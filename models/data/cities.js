@@ -5,7 +5,7 @@ import City from "../City.js";
 const cities = [
     {
       name: "Paris",
-      photo: "https://example.com/paris.jpg",
+      photo: "https://cdn.pixabay.com/photo/2018/12/17/18/53/paris-3881047_1280.jpg",
       country: "France",
       continent: "Europe",
       description: "The city of love, known for its iconic Eiffel Tower, art museums, and romantic atmosphere.",
@@ -16,7 +16,7 @@ const cities = [
     },
     {
       name: "New York City",
-      photo: "https://example.com/nyc.jpg",
+      photo: "https://cdn.pixabay.com/photo/2019/07/21/07/12/new-york-4352072_1280.jpg",
       country: "United States",
       continent: "North America",
       description: "The city that never sleeps, famous for its skyline, Broadway shows, and vibrant culture.",
@@ -27,7 +27,7 @@ const cities = [
     },
     {
       name: "Tokyo",
-      photo: "https://example.com/tokyo.jpg",
+      photo: "https://cdn.pixabay.com/photo/2019/04/20/11/39/japan-4141579_960_720.jpg",
       country: "Japan",
       continent: "Asia",
       description: "A bustling metropolis blending traditional temples with futuristic skyscrapers.",
@@ -38,7 +38,7 @@ const cities = [
     },
     {
       name: "Sydney",
-      photo: "https://example.com/sydney.jpg",
+      photo: "https://cdn.pixabay.com/photo/2019/03/24/21/52/sydney-4078776_1280.jpg",
       country: "Australia",
       continent: "Australia",
       description: "Famous for its Opera House, beautiful beaches, and laid-back coastal lifestyle.",
@@ -49,7 +49,7 @@ const cities = [
     },
     {
       name: "Cape Town",
-      photo: "https://example.com/capetown.jpg",
+      photo: "https://cdn.pixabay.com/photo/2018/07/18/09/23/cape-town-city-bowl-3545921_960_720.jpg",
       country: "South Africa",
       continent: "Africa",
       description: "A vibrant city with stunning natural landscapes, including Table Mountain and beaches.",
@@ -60,7 +60,7 @@ const cities = [
     },
     {
       name: "Rio de Janeiro",
-      photo: "https://example.com/rio.jpg",
+      photo: "https://cdn.pixabay.com/photo/2019/07/19/05/40/rio-4348017_960_720.jpg",
       country: "Brazil",
       continent: "South America",
       description: "Known for its carnival, beautiful beaches, and the iconic Christ the Redeemer statue.",
@@ -71,7 +71,7 @@ const cities = [
     },
     {
       name: "London",
-      photo: "https://example.com/london.jpg",
+      photo: "https://cdn.pixabay.com/photo/2017/10/18/14/54/london-eye-2864410_960_720.jpg",
       country: "United Kingdom",
       continent: "Europe",
       description: "A historical city with famous landmarks like Big Ben, Buckingham Palace, and the British Museum.",
@@ -82,7 +82,7 @@ const cities = [
     },
     {
       name: "Dubai",
-      photo: "https://example.com/dubai.jpg",
+      photo: "https://cdn.pixabay.com/photo/2019/03/09/21/30/downtown-4045035_1280.jpg",
       country: "United Arab Emirates",
       continent: "Asia",
       description: "A modern city known for its skyscrapers, luxury shopping, and desert safaris.",
@@ -93,7 +93,7 @@ const cities = [
     },
     {
       name: "Rome",
-      photo: "https://example.com/rome.jpg",
+      photo: "https://cdn.pixabay.com/photo/2016/11/05/08/31/rome-1799670_1280.jpg",
       country: "Italy",
       continent: "Europe",
       description: "A historic city filled with ancient ruins, art, and iconic architecture like the Colosseum.",
@@ -104,7 +104,7 @@ const cities = [
     },
     {
       name: "Bangkok",
-      photo: "https://example.com/bangkok.jpg",
+      photo: "https://cdn.pixabay.com/photo/2010/11/29/thailand-422_960_720.jpg",
       country: "Thailand",
       continent: "Asia",
       description: "A city known for its vibrant street life, temples, and bustling markets.",
@@ -115,7 +115,7 @@ const cities = [
     },
     {
       name: "Istanbul",
-      photo: "https://example.com/istanbul.jpg",
+      photo: "https://cdn.pixabay.com/photo/2013/11/23/18/40/hagia-sophia-216471_1280.jpg",
       country: "Turkey",
       continent: "Europe/Asia",
       description: "A city bridging Europe and Asia, rich in history, culture, and stunning architecture.",
@@ -126,7 +126,7 @@ const cities = [
     },
     {
       name: "Hong Kong",
-      photo: "https://example.com/hongkong.jpg",
+      photo: "https://cdn.pixabay.com/photo/2018/12/02/14/53/hong-kong-3851342_1280.jpg",
       country: "China",
       continent: "Asia",
       description: "A bustling metropolis known for its skyscrapers, vibrant nightlife, and food markets.",
@@ -137,10 +137,10 @@ const cities = [
     },
     {
       name: "Barcelona",
-      photo: "https://example.com/barcelona.jpg",
+      photo: "https://cdn.pixabay.com/photo/2016/03/24/07/31/spain-1276209_1280.jpg",
       country: "Spain",
       continent: "Europe",
-      description: "A city famous for its art and architecture, including Gaudí’s Sagrada Família.",
+      description: "A city famous for its art and architecture, including Gaudí's Sagrada Família.",
       currency: "Euro",
       demonym: "Barcelonian",
       popularPlaces: ["Sagrada Família", "Park Güell", "La Rambla"],
@@ -148,7 +148,7 @@ const cities = [
     },
     {
       name: "Los Angeles",
-      photo: "https://example.com/losangeles.jpg",
+      photo: "https://cdn.pixabay.com/photo/2014/10/22/17/34/los-angeles-498285_1280.jpg",
       country: "United States",
       continent: "North America",
       description: "The entertainment capital, known for Hollywood, beaches, and diverse culture.",
@@ -159,7 +159,7 @@ const cities = [
     },
     {
       name: "Mexico City",
-      photo: "https://example.com/mexicocity.jpg",
+      photo: "https://cdn.pixabay.com/photo/2020/03/11/06/39/statue-4921193_1280.jpg",
       country: "Mexico",
       continent: "North America",
       description: "A bustling city with rich history, colonial architecture, and vibrant street life.",
@@ -170,7 +170,7 @@ const cities = [
     },
     {
       name: "Moscow",
-      photo: "https://example.com/moscow.jpg",
+      photo: "https://cdn.pixabay.com/photo/2020/02/09/17/21/moscow-4833906_1280.jpg",
       country: "Russia",
       continent: "Europe",
       description: "The capital of Russia, known for its Red Square, historic architecture, and vibrant culture.",

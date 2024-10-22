@@ -3,8 +3,16 @@ import City from "../../models/City.js"
 let allCities= async (req,res, next)=>{
 
     try {
+        let {name} = req.query
+        let query= {}
 
-        let all= await City.find()
+        if (name) {
+
+            query.name= {$regex : "^"+name, $options : "i"}
+            
+        }
+
+        let all= await City.find(query)
         return res.status(200).json({
             response: all
         })
@@ -14,6 +22,10 @@ let allCities= async (req,res, next)=>{
         next(error)
     }
 }
+
+/*let all= await City.find()
+        return res.status(200).json({
+            response: all*/
 
 let citiesByName = async (req,res, next)=>{
 
@@ -31,12 +43,13 @@ let citiesByName = async (req,res, next)=>{
     }
 }
 
-let citiesByCountry = async (req,res, next)=>{
+let citiesById = async (req,res, next)=>{
 
     try {
-
-        let countryQuery = req.params.x
-        let all= await City.find({ country : countryQuery })
+        console.log(req.params);
+        
+        let idQuery = req.params.id
+        let all = await  User.findById(idQuery)
         return res.status(200).json({
             response: all
         })
@@ -47,20 +60,5 @@ let citiesByCountry = async (req,res, next)=>{
     }
 }
 
-let citiesByClimate = async (req,res, next)=>{
 
-    try {
-
-        let climateQuery = req.params.x
-        let all= await Employee.find({climate : climateQuery})
-        return res.status(200).json({
-            response: all
-        })
-        
-    } catch (error) {
-
-        next(error)
-    }
-}
-
-export {allCities, citiesByName, citiesByCountry, citiesByClimate}
+export {allCities, citiesByName, citiesById}
