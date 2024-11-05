@@ -1,18 +1,18 @@
-import City from "../../models/City.js"
+import Itinerary from "../../models/Itinerary.js"
 
-let allCities= async (req,res, next)=>{
+let allItineraries= async (req,res, next)=>{
 
     try {
-        let {name} = req.query
+        let {nameCity} = req.query
         let query= {}
 
-        if (name) {
+        if (nameCity) {
 
-            query.name= {$regex : "^"+name, $options : "i"}
+            query.nameCity= {$regex : "^"+nameCity, $options : "i"}
             
         }
 
-        let all= await City.find(query)
+        let all= await Itinerary.find(query)
         return res.status(200).json({
             response: all
         })
@@ -23,12 +23,12 @@ let allCities= async (req,res, next)=>{
     }
 }
 
-let citiesByName = async (req,res, next)=>{
+let allByCity= async (req,res, next)=>{
 
     try {
 
-        let nameQuery = req.params.x
-        let all= await City.find({name : nameQuery})
+        let cityQuery = req.params.x
+        let all= await Itinerary.find({city : cityQuery})
         return res.status(200).json({
             response: all
         })
@@ -39,7 +39,8 @@ let citiesByName = async (req,res, next)=>{
     }
 }
 
-let citiesById = async (req,res, next)=>{
+
+let itinerariesById = async (req,res, next)=>{
 
     try {
         console.log(req.params);
@@ -57,4 +58,4 @@ let citiesById = async (req,res, next)=>{
 }
 
 
-export {allCities, citiesByName, citiesById}
+export {allItineraries, allByCity, itinerariesById}

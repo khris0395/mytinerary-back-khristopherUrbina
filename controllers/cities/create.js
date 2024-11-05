@@ -14,7 +14,7 @@ let createCity = async (req,res, next) =>{
     }
 }
 
-let createManyCities = async (req,res, next) =>{
+let createCities = async (req,res, next) =>{
     try {
         let cities = req.body
         let all = await City.insertMany(cities)
@@ -27,4 +27,4 @@ let createManyCities = async (req,res, next) =>{
     }
 }
 
-export {createCity, createManyCities}
+export {createCity, createCities}
