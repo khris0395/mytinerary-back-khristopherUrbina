@@ -32,7 +32,7 @@ const schema = new Schema({
     required: true
   },
   popularPlaces: {
-    type: [String], // Array of strings
+    type: [String],
     required: true
   },
   climate: {
