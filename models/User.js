@@ -4,12 +4,11 @@ let collection= "users"
 
 const schema = new Schema({
 
-    userPhoto: {type: String, required: true},
-    name: {type: String, required: true},
+    firstName: {type: String, required: true},
     lastName: {type: String, required: true},
     email: {type: String, required: true},
     password: {type: String, required: true},
-    role: {type: Number, required: true},
+    userPhoto: {type: String, required: true},
     online: {type: Boolean},
     country: {type: String}
 
